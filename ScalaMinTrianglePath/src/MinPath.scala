@@ -9,8 +9,8 @@ object MinPath extends App {
     val curTime = System.currentTimeMillis();
     var triangle: Triangle = new Triangle
     var rows: ListBuffer[Array[Node]] = ListBuffer.empty
-    //Read in the triangle from std in
-    io.Source.fromFile("triangle.txt").getLines
+    //Read in the triangle from a file
+    io.Source.fromFile("triangle10000.txt").getLines
       .foreach(line =>
         triangle.addRow(
           //convert each number in the line into a Node
